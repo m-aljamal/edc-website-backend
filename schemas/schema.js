@@ -14,6 +14,9 @@ import localeString from "./localeString";
 import localeText from "./localeText";
 import blockText from "./blockText";
 import localeBlock from "./localeBlock";
+import report from "./report";
+import gallaryImage from "./gallery_image";
+import galleryVideo from "./galleryVideo";
 export default createSchema({
   name: "default",
 
@@ -32,5 +35,8 @@ export default createSchema({
     imagesSlide,
     blockText,
     localeBlock,
+    report,
+    gallaryImage,
+    galleryVideo,
   ]),
 });
