@@ -9,10 +9,25 @@ export default {
       type: "image",
       title: "Image",
     },
+
     {
-      name: "title",
-      type: "string",
-      title: "image title",
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: [{ type: "category" }],
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      category: "category.title",
+      media: "mainImage",
+    },
+    prepare(selection) {
+      const { category } = selection;
+      return Object.assign({}, selection, {
+        subtitle: category && category.length > 0 ? category[0].title : "",
+      });
+    },
+  },
 };

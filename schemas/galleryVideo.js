@@ -10,9 +10,10 @@ export default {
       title: "viedo url",
     },
     {
-      name: "title",
-      type: "string",
-      title: "viedo title",
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: [{ type: "category" }],
     },
   ],
 };

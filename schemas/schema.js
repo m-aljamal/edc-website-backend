@@ -17,6 +17,7 @@ import localeBlock from "./localeBlock";
 import report from "./report";
 import gallaryImage from "./gallery_image";
 import galleryVideo from "./galleryVideo";
+import category from "./category";
 export default createSchema({
   name: "default",
 
@@ -38,5 +39,6 @@ export default createSchema({
     report,
     gallaryImage,
     galleryVideo,
+    category,
   ]),
 });
